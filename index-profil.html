@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profil Kelompok - PIBS 2024</title>
+<style>
+  :root{
+    --bg: #F4F7EF;
+    --card-bg: #ffffff;
+    --accent: #3a7d44;
+    --accent-light: #e6f2e8;
+    --text: #1a1a1a;
+    --muted: #666666;
+    --border: #e2e8dd;
+  }
+  * { box-sizing: border-box; margin:0; padding:0; font-family: 'Segoe UI', Arial, sans-serif; }
+  body{
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    padding: 40px 20px;
+  }
+  header{ text-align:center; margin-bottom: 32px; }
+  header h1{ font-size: 1.8rem; margin-bottom: 6px; }
+  header p{ color: var(--muted); font-size: 0.9rem; }
+
+  .list{
+    display:flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    max-width: 420px;
+  }
+  .list a{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 600;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+    transition: transform 0.15s ease;
+  }
+  .list a:hover{
+    transform: translateY(-3px);
+    border-color: var(--accent);
+  }
+  .list a span.arrow{
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  footer{
+    margin-top: 40px;
+    color: var(--muted);
+    font-size: 0.8rem;
+    text-align:center;
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>Profil Anggota Kelompok</h1>
+    <p>Pengolahan Informasi Berbasis Pemrograman Script (PIBS) 2024</p>
+  </header>
+
+  <div class="list">
+    <a href="profilAnggota1.html">
+      Nama Anggota 1 <span class="arrow">&#8594;</span>
+    </a>
+    <a href="profilAnggota2.html">
+      Nama Anggota 2 <span class="arrow">&#8594;</span>
+    </a>
+    <a href="profilAnggota3.html">
+      Nama Anggota 3 <span class="arrow">&#8594;</span>
+    </a>
+  </div>
+
+  <footer>
+    &copy; 2024 - Tugas 1 PIBS
+  </footer>
+
+</body>
+</html>
