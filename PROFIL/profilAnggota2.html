@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profil - Nama Anggota 2</title>
+<style>
+  :root{
+    --bg: #E3EAD9;
+    --card-bg: #C9D6B8;
+    --accent: #2f6b3a;
+    --accent2: #1f4d28;
+    --text: #111111;
+    --muted: #333333;
+  }
+  * { box-sizing: border-box; margin:0; padding:0; }
+  body{
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding: 20px;
+  }
+  .card{
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 32px;
+    width: 320px;
+    text-align:center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+  }
+  .foto{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent);
+    margin-bottom: 16px;
+  }
+  .nama{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .nim{
+    color: var(--accent2);
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+  }
+  .bio{
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  .skills{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content:center;
+    margin-bottom: 16px;
+  }
+  .skill-tag{
+    background: rgba(47,107,58,0.15);
+    color: var(--accent);
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+  }
+  .sosmed a{
+    color: var(--text);
+    margin: 0 8px;
+    text-decoration:none;
+    font-size: 0.85rem;
+    border-bottom: 1px solid var(--accent2);
+  }
+</style>
+</head>
+<body>
+
+  <div class="card">
+    <img class="foto" src="foto2.jpg" alt="Foto Anggota 2">
+    <div class="nama">Nama Anggota 2</div>
+    <div class="nim">NIM: 000000002</div>
+    <p class="bio">Deskripsi singkat tentang diri, minat, dan peran di kelompok ini.</p>
+    <div class="skills">
+      <span class="skill-tag">HTML</span>
+      <span class="skill-tag">CSS</span>
+      <span class="skill-tag">Python</span>
+    </div>
+    <div class="sosmed">
+      <a href="#" target="_blank">GitHub</a>
+      <a href="#" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+</body>
+</html>
